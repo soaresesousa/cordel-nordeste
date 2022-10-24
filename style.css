@@ -17,25 +17,30 @@
 }
 
 html, body {
-    height: 100vh;
+    min-height: 100vh;
 }
 
 header {
     background-color: black;
     color: white;
-    height: 180px;
     text-align: center;
-    padding: 10px;
-    font-variant: small-caps;
 }
 
-header > h1, header > p {
+header > h1 {
     font-family: var(--fonte2);
+    font-size: 6vw;
+    padding-top: 50px;
+}
+
+header p {
+    padding-bottom: 50px;
+    font-size: 2.5vw;
 }
 
 a {
     text-decoration: none;
     color: white;
+    font-weight: bold;
 }
 
 a:hover {
@@ -43,10 +48,37 @@ a:hover {
     color: rgb(0, 0, 255);
 }
 
+section.imagem {
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.281);
+    padding: 30px;
+}
+
 section > p {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
     font-family: var(--fonte3);
-    font-size: 1.5em;
+    font-size: 3vw;
     padding-left: 30px;
+}
+
+section.imagem > p {
+    background-color: rgba(0, 0, 0, 0.308);
+    display: inline-block;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: white;
+}
+
+section#img01 {
+    background-image: url(imagens/imagem01.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+section#img02 {
+    background-image: url(imagens/imagem02.jpg);
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 footer {
